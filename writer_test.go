@@ -15,7 +15,7 @@ import (
 )
 
 func ExampleWriter() {
-	s, _ := session.NewSession(&aws.Config{ /* ... */ })
+	s, _ := session.NewSession()
 	ow := s3ow.New(s, s3ow.Bucket(""), s3ow.Key(""))
 	zw := zip.NewWriter(ow)
 	// Add stuff to zip.

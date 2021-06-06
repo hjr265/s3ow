@@ -17,7 +17,7 @@ $ go get github.com/hjr265/s3ow
 Creating and uploading a ZIP to S3:
 
 ```golang
-s, _ := session.NewSession(&aws.Config{ /* ... */ })
+s, _ := session.NewSession()
 ow := s3ow.New(s, s3ow.Bucket(""), s3ow.Key(""))
 zw := zip.NewWriter(ow)
 // Add stuff to zip.
