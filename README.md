@@ -4,6 +4,8 @@
 
 Write objects directly to AWS S3-like storages without requiring any intermediary files. 
 
+[How It Works](https://hjr265.me/blog/stream-uploading-files-s3-object-writer/)
+
 ## Installation
 
 Install s3ow using the go get command:
